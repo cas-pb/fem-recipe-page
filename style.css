@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+}
+
+body {
+background-color: hsl(30, 54%, 90%);
+}
+
+.container {
+    background-color: white;
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+/* fix margins on headings and p's */
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+h1, h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+h2, li::marker, .value {
+    color: hsl(14, 45%, 36%);
+
+}
+
+li, p, h3, .nutrition-section {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.prep-info {
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 18px 0;
+}
+
+.prep-info > p {
+    font-size: 18px;
+    color: hsl(332, 51%, 32%);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+li {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+span {
+    font-weight: bold;
+}
+
+p, li, table {
+    color: hsl(30, 10%, 34%);
+}
+
+.nutrition-section {
+    margin-bottom: 25px;
+}
+
+
+.calories, .carbs, .protein, .fat {
+    padding-bottom: 20px;
+    display: flex;
+    
+}
+
+.value {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+tr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+hr {
+    
+    outline: none;
+    border: none;
+    height: 1px;
+    background: hsl(30, 18%, 87%);
+    margin-top: 20px;
+    margin-bottom: 18px;
+ 
+}
+
+@media (max-width: 700px) {
+    .container {
+       margin: 0;
+       width: auto;
+    }
+
+}
